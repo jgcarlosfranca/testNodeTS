@@ -5,11 +5,14 @@ interface IMailTo{
 }
 
 interface IMailMsg{
+    subject: string
+    body: string
+    attachment?: string[] // pode ser declarado Array<string>
 
 }
 
 class EmailService{
-    sendMail(to: IMailTo, message){
+    sendMail(to: IMailTo, message: IMailMsg){
         console.log('Email enviado')
     }
 
