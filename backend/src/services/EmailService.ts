@@ -13,7 +13,7 @@ interface IMailMsg{
 
 class EmailService{
     sendMail(to: IMailTo, message: IMailMsg){
-        console.log('Email enviado')
+        console.log(`Email enviado para ${to.name}: ${message.subject}`)
     }
 
 }
