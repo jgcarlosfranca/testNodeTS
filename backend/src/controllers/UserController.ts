@@ -18,8 +18,7 @@ export default {
                 name: 'teste',
                 email: 'teste@gmail'
             },
-            message:
-            {
+            message: {
                 subject: 'email title',
                 body: 'testing my api to send email'
             }
