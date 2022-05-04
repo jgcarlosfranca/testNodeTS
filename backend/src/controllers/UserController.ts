@@ -13,10 +13,17 @@ export default {
     async create(req: Request, res: Response) {
         const emailService = new EmailService()
 
-        emailService.sendMail(
-            { name: 'teste', email: 'teste@gmail' },
-            { subject: 'email title', body: 'testing my api to send email' }
-        )
+        emailService.sendMail({
+            to: {
+                name: 'teste',
+                email: 'teste@gmail'
+            },
+            message:
+            {
+                subject: 'email title',
+                body: 'testing my api to send email'
+            }
+        })
 
     }
 }
